@@ -28,6 +28,18 @@ At the start of a meaningful session:
 
 Do not read the whole vault by default once it contains real private notes. Prefer targeted reads.
 
+## Session End
+
+Near the end of every agentic session, if any files were created, edited, moved, or removed, finish cleanly:
+
+1. Review the diff and run relevant lightweight validation.
+2. Scan for secrets or inappropriate private content before any public commit.
+3. Never commit `.planning/` or other local workflow artifacts.
+4. Commit a cohesive change with a concise message.
+5. Push the current branch to its configured remote.
+
+Do this without asking for extra permission unless the user explicitly said not to commit or push. If commit or push is blocked, explain the blocker and leave the repository in the cleanest safe state.
+
 ## Skills
 
 Skills are Markdown playbooks in `.agents/skills/`. If your agent runtime supports local skills, point it at that directory. If it does not, read the relevant `SKILL.md` file and follow it manually.
@@ -51,6 +63,18 @@ Use these skills when relevant:
 - Keep reusable skills under `.agents/skills/`, not a model-specific directory.
 - When creating new personalized skills, first use `.agents/skills/skill-creator/SKILL.md`, then place the finished skill under `.agents/skills/<skill-name>/`.
 - Personalized skills must remain public-template safe: store reusable methods, prompts, scripts, and neutral examples, not private personal facts.
+
+## Behavioral Changes
+
+Be attentive when the user asks for a permanent behavioral change. Treat phrases like "always", "never", "from now on", "permanent instruction", "make agents", or "the agent should" as signals that repo behavior should be updated.
+
+When a requested behavior should persist, update the best durable place in the same turn:
+
+- `AGENTS.md` for repo-wide agent behavior.
+- The relevant `.agents/skills/<skill-name>/SKILL.md` for workflow-specific behavior.
+- Templates or folder notes when the rule only affects a note type or location.
+
+Do not leave permanent behavior changes only in chat. If the right destination is ambiguous, choose the most general safe place and keep the instruction concise.
 
 ## Privacy Rules
 
