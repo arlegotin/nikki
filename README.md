@@ -1,4 +1,4 @@
-# Nikki
+# nikki
 
 An agent-ready personal vault starter.
 
