@@ -93,8 +93,16 @@ Do not leave permanent behavior changes only in chat. If the right destination i
 - Use Obsidian wikilinks like `[[Goals]]` for internal note references.
 - Prefer concise notes with clear headings and checklists.
 - Keep folder-level indexes updated when adding important notes.
-- Respond in the language of the user's latest message.
 - When unsure whether content is private, treat it as private.
+
+## Language Rules
+
+- Files in this repo may be in any language.
+- At the start of each session, identify the language of the first user request.
+- Speak to the user in that session language for the entire session, even if later messages or source files use another language.
+- Write new user-facing artifacts in the session language unless the user explicitly asks for a different language.
+- When existing source material is in another language, translate gracefully and reliably instead of copying language drift into replies or generated artifacts.
+- Preserve exact names, paths, commands, code, quoted text, and established titles unless translation is clearly requested.
 
 ## Vault Structure
 
