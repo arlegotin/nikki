@@ -1,0 +1,14 @@
+{
+  "instructions": "Read AGENTS.md before working in this vault.",
+  "skillsDirectory": ".agents/skills",
+  "privacy": {
+    "publicBoilerplate": true,
+    "doNotCommit": [
+      ".planning/",
+      ".agents/local.*",
+      ".env",
+      "private notes",
+      "credentials"
+    ]
+  }
+}

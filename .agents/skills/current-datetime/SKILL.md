@@ -13,8 +13,7 @@ Use this skill whenever exact local date or time matters.
 Run:
 
 ```bash
-python3 .claude/skills/current-datetime/get_datetime.py
+python3 .agents/skills/current-datetime/get_datetime.py
 ```
 
 Treat the script output as authoritative for date-sensitive work.
-

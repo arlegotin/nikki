@@ -40,7 +40,7 @@ Do not read the entire vault by default.
 
 ## Workflow
 
-1. If date-sensitive, run `python3 .claude/skills/current-datetime/get_datetime.py`.
+1. If date-sensitive, run `python3 .agents/skills/current-datetime/get_datetime.py`.
 2. Ask one opening question: "How much time do you have, and what are we journaling about?"
 3. Capture minimal context:
    - date
@@ -162,4 +162,3 @@ tags: [journal/decision]
 
 ## Review Date
 ```
-

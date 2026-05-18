@@ -10,6 +10,7 @@ This repository is meant to be forked publicly. The safest rule is simple: keep 
 - Private employer, client, or interview material.
 - Names, addresses, phone numbers, emails, private links, or local machine paths.
 - Assistant-generated memory that quotes private notes.
+- `.planning/` and other GSD planning notes.
 
 ## Recommended Workflow
 
@@ -30,4 +31,3 @@ git status --short
 ```
 
 Manual review still matters. Scanners miss context.
-
