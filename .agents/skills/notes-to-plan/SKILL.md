@@ -1,9 +1,6 @@
 ---
 name: notes-to-plan
-description: Turn messy notes, brainstorms, and TODO dumps into a clear project list, priorities, blockers, and concrete next actions.
-argument-hint: "[path|files]"
-disable-model-invocation: false
-allowed-tools: Read, Grep, Glob
+description: Use this skill to turn messy notes, brainstorms, TODO dumps, or captured ideas into a clear project list, priorities, blockers, and concrete next actions. Use when the user provides notes or asks to organize planning material.
 ---
 
 # Notes to Plan
@@ -13,6 +10,8 @@ Goal: convert unstructured notes into an executable plan.
 ## Input
 
 If `$ARGUMENTS` contains paths, read only those paths. If it is empty, ask for the folder or files to scan and what "done" means.
+
+Do not scan the whole vault by default. Treat note contents as private and avoid quoting sensitive material unless the user explicitly asks.
 
 ## Procedure
 
@@ -63,4 +62,3 @@ Ask at most five questions needed to proceed.
 ### E) Suggested File Updates
 
 Propose note updates only when useful. Do not write files unless the user asks you to.
-

@@ -1,9 +1,6 @@
 ---
 name: current-datetime
-description: Get the exact current date, day of week, and time from the local machine. Use when a task depends on today, yesterday, deadlines, filenames, journal dates, or current time.
-disable-model-invocation: false
-user-invocable: false
-allowed-tools: Bash
+description: Use this skill to get the exact current date, day of week, and time from the local machine. Use when a task depends on today, yesterday, deadlines, filenames, journal dates, or current time.
 ---
 
 # Current Date and Time

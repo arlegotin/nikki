@@ -1,8 +1,6 @@
 ---
 name: socratic-journaling
-description: Guide a Socratic journal session inside an Obsidian vault. Use when the user wants to reflect, process an event, clarify a decision, or write a daily journal entry.
-argument-hint: "[quick|daily|thought-record|decision] [topic]"
-allowed-tools: Read, Write, Edit, Grep, Glob, Bash
+description: Use this skill to guide a Socratic journal session inside an Obsidian vault. Use when the user wants to reflect, process an event, clarify a decision, write a daily entry, or create a thought record.
 ---
 
 # Socratic Journaling
@@ -17,6 +15,13 @@ Help the user create useful journal entries through a short conversation, then w
 - Close with the most accurate current view and a small next action.
 - Do not diagnose. Do not overreach.
 - Keep sensitive details inside the vault, not in public summaries.
+- If the user may harm themselves or someone else, pause journaling and recommend immediate local emergency help plus a trusted person.
+
+## Routing
+
+- Use `/adaptive-journaling` first when the user wants to journal but is unsure what format fits.
+- Use `/no-bs-coach` when the user asks for direct accountability, challenge, or behavior change.
+- Use this skill when the user asks for reflection, a specific journaling mode, or a saved journal entry.
 
 ## Modes
 

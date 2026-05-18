@@ -1,12 +1,13 @@
 ---
 name: obsidian-markdown
-description: Create and edit Obsidian-flavored Markdown with wikilinks, embeds, callouts, properties, tags, and note templates.
-allowed-tools: Read, Write, Edit, Grep, Glob
+description: Use this skill to create or edit Obsidian-flavored Markdown with wikilinks, embeds, callouts, properties, tags, indexes, and note templates. Use whenever writing or modifying notes in this vault.
 ---
 
 # Obsidian Markdown
 
 Use this skill when creating or editing notes in this vault.
+
+Do not use this skill for coaching, journaling structure selection, or task prioritization unless the user also asks to create or edit an Obsidian note.
 
 ## Core Rules
 
@@ -46,4 +47,3 @@ External link: [Obsidian](https://obsidian.md)
 - Keep indexes updated when adding important notes.
 - Avoid over-linking generic words.
 - If a note contains sensitive material, do not quote it in public-facing text.
-

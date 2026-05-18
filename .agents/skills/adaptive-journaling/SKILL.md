@@ -1,14 +1,13 @@
 ---
 name: adaptive-journaling
-description: Select the right journaling framework based on current energy, mood, time, and topic. Use when the user wants to journal but does not know which format fits.
-argument-hint: "[low|medium|high|crisis] [topic]"
-disable-model-invocation: true
-allowed-tools: Read, Write, Edit, Grep, Glob, Bash
+description: Use this skill to choose the right journaling framework based on current energy, mood, time, and topic. Use when the user wants to journal but does not know which format fits; do not use when the user already requested a specific journaling mode.
 ---
 
 # Adaptive Journaling
 
 Choose the lightest useful journaling mode for the user's current state.
+
+This is reflective journaling, not clinical care. If the user may harm themselves or someone else, pause journaling and recommend immediate local emergency help plus a trusted person.
 
 ## First Question
 
@@ -26,6 +25,12 @@ If the user has not already said enough, ask:
 - High energy and complex topic: Socratic dialogue.
 
 Explain the choice in one sentence and allow override.
+
+## Routing
+
+- Use `/socratic-journaling` directly when the user asks for a Socratic journal, decision journal, thought record, or daily entry.
+- Use `/no-bs-coach` when the user wants accountability, goal pressure, habits, or direct feedback rather than reflection.
+- Do not write an entry unless the user asks to save it or clearly wants the entry saved.
 
 ## Shared Metadata
 
@@ -78,4 +83,3 @@ Use when emotion is strong:
 5. What evidence does not support it?
 6. What is more accurate?
 7. What is the next small action?
-
