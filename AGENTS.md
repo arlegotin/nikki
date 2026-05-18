@@ -16,7 +16,9 @@ At the start of a meaningful session:
    python3 .agents/skills/current-datetime/get_datetime.py
    ```
 
-2. Read only the context needed for the user's request. Good default context files are:
+2. If the vault appears new, sparse, or mostly boilerplate, use `/personal-context-onboarding` before relying on personal context. The skill should check only starter areas and gently invite the user to share one small, optional piece of useful context.
+
+3. Read only the context needed for the user's request. Good default context files are:
    - `Me/Index.md`
    - `Me/Goals.md`
    - `Journal/Index.md`
@@ -35,6 +37,7 @@ Use these skills when relevant:
 - `/no-bs-coach` for direct coaching, accountability, habits, and goals.
 - `/notes-to-plan` for converting messy notes or TODOs into plans.
 - `/obsidian-markdown` when creating or editing Obsidian notes.
+- `/personal-context-onboarding` at the beginning of a meaningful session when the vault is still sparse or mostly boilerplate.
 - `/current-datetime` when exact local date or time matters.
 
 ## Agent Compatibility
