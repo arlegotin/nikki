@@ -32,6 +32,7 @@ Skills are Markdown playbooks in `.agents/skills/`. If your agent runtime suppor
 
 Use these skills when relevant:
 
+- `/skill-creator` for creating or updating personalized skills. Use it before adding new skill folders, scripts, references, assets, or skill metadata.
 - `/socratic-journaling` for guided reflection and journal entries.
 - `/adaptive-journaling` when the user wants to journal but is unsure which format fits.
 - `/no-bs-coach` for direct coaching, accountability, habits, and goals.
@@ -46,6 +47,8 @@ Use these skills when relevant:
 - Do not duplicate long-lived policy into model-specific files.
 - If a tool expects a vendor-specific instruction file, make that file a short pointer to `AGENTS.md`.
 - Keep reusable skills under `.agents/skills/`, not a model-specific directory.
+- When creating new personalized skills, first use `.agents/skills/skill-creator/SKILL.md`, then place the finished skill under `.agents/skills/<skill-name>/`.
+- Personalized skills must remain public-template safe: store reusable methods, prompts, scripts, and neutral examples, not private personal facts.
 
 ## Privacy Rules
 
