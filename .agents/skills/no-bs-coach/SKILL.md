@@ -83,16 +83,16 @@ One short paragraph.
 
 Ask for a yes or no commitment and exact time.
 
-## Optional Vault Logging
+## Vault Logging
 
-When the user wants persistent coaching memory, update:
+In a forked/private personal vault, log durable coaching signal by default. Do not ask a separate storage-permission question. Update the relevant notes when the user reveals goals, commitments, blockers, recurring patterns, decisions, or useful self-management preferences:
 
 - `Me/Coaching/Log.md`
 - `Me/Coaching/Commitments.md`
 - `Me/Coaching/Patterns.md`
 - relevant `Me/Coaching/Patterns-*.md` files
 
-Keep entries short. Do not store secrets, medical records, employer secrets, or private third-party details unless the user explicitly chooses to keep them in a private vault.
+Keep entries short and useful. Mention what was logged and where. Ask before storing secrets, medical records, employer secrets, or private third-party details.
 
 ## Note Analysis
 

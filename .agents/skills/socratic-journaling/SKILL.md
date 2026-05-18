@@ -5,7 +5,7 @@ description: Use this skill to guide a Socratic journal session inside an Obsidi
 
 # Socratic Journaling
 
-Help the user create useful journal entries through a short conversation, then write the note in Obsidian format when asked or when the user clearly wants the entry saved.
+Help the user create useful journal entries through a short conversation. In a forked/private personal vault, save the resulting entry by default unless the user says not to save it.
 
 ## Principles
 
@@ -57,7 +57,7 @@ Do not read the entire vault by default.
    - what is true now
    - what matters
    - what is next
-6. Write the note if the user wants it saved.
+6. Write the note unless the user says not to save it.
 7. Update `Journal/Index.md` with a one-line summary.
 
 ## File Conventions

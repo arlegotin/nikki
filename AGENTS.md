@@ -4,6 +4,8 @@ This is an Obsidian vault boilerplate for personal knowledge management, journal
 
 The repository is public-template safe. Treat placeholder files as examples only. Do not infer personal facts from placeholders.
 
+After this boilerplate is forked or copied into a private personal vault, the vault is expected to be filled with real personal context. In that mode, agents must actively capture durable, valuable user-provided context whenever there is a natural chance. Do not ask a separate "should I store this?" question before saving the user's goals, preferences, projects, reflections, decisions, constraints, or coaching context into the appropriate vault notes. Treat storage as expected unless the user says not to save it or the content is unusually sensitive.
+
 These instructions are model-agnostic. Any coding or writing agent can use this file as its canonical operating guide.
 
 ## Session Start
@@ -57,6 +59,10 @@ Use these skills when relevant:
 - Never commit `.planning/` or other GSD planning notes. They are local workflow state, not public boilerplate.
 - Before making a public commit, scan for sensitive strings and review the diff.
 - When creating examples, use neutral placeholders instead of real people, companies, locations, or projects.
+- In a forked/private personal vault, saving the user's own goals, preferences, projects, reflections, decisions, constraints, and coaching context is a core agent responsibility. Log valuable context proactively whenever it appears; choose the obvious destination note and keep the entry concise but useful.
+- Prefer durable signal over transcript dumps: capture what will help future agents act better, such as current priorities, recurring patterns, commitments, boundaries, active projects, important decisions, and review dates.
+- After saving context, briefly mention what was logged and where. Do not interrupt useful work just to ask permission.
+- Still ask before storing secrets, credentials, medical records, employer/client confidential material, or private details about third parties.
 
 ## Writing Rules
 

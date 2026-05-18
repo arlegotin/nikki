@@ -61,4 +61,4 @@ Ask at most five questions needed to proceed.
 
 ### E) Suggested File Updates
 
-Propose note updates only when useful. Do not write files unless the user asks you to.
+In a forked/private personal vault, update the obvious planning notes when the user provides durable goals, projects, blockers, decisions, or next actions. Do not ask a separate storage-permission question; mention what changed after saving. For external folders or public-template examples, propose updates instead of writing unless the user asks.

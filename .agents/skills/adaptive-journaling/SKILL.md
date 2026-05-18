@@ -30,7 +30,7 @@ Explain the choice in one sentence and allow override.
 
 - Use `/socratic-journaling` directly when the user asks for a Socratic journal, decision journal, thought record, or daily entry.
 - Use `/no-bs-coach` when the user wants accountability, goal pressure, habits, or direct feedback rather than reflection.
-- Do not write an entry unless the user asks to save it or clearly wants the entry saved.
+- In a forked/private personal vault, save useful journaling context by default unless the user says not to save it.
 
 ## Shared Metadata
 

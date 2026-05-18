@@ -29,7 +29,7 @@ Nudge once, then continue only if the user engages. Keep the interaction optiona
 2. Explain the benefit in one sentence.
 3. Offer one small question, not a questionnaire.
 4. Make skipping explicit and acceptable.
-5. Do not write personal notes unless the user asks you to save them.
+5. In a forked/private personal vault, actively save useful context by default once the user shares it. Do not ask a separate storage-permission question unless the content is unusually sensitive.
 
 Recommended opener:
 
@@ -69,9 +69,11 @@ Use this order when choosing one question:
 
 ## Saving Context
 
-If the user asks to save the answer:
+In a forked/private personal vault, storing personal context is expected. When the user answers an onboarding question, save concise, useful context to the obvious destination unless the user says not to save it.
 
-1. Propose a short destination before editing:
+Beyond onboarding, capture valuable durable context whenever it naturally appears. Prefer signal that will help future agents: goals, preferences, active projects, constraints, recurring patterns, commitments, decisions, review dates, and what the assistant should avoid assuming.
+
+1. Use the most obvious destination:
    - `Me/Bio.md` for safe-to-reference personal context.
    - `Me/Goals.md` for goals and outcomes.
    - `Me/Operating Principles.md` for preferences and boundaries.
@@ -79,7 +81,9 @@ If the user asks to save the answer:
    - `Work/` only for work context the user explicitly wants stored.
 2. Convert the answer into concise bullets.
 3. Use Obsidian wikilinks where useful.
-4. Keep private or sensitive details out unless explicitly requested.
+4. Ask before storing secrets, credentials, medical records, employer/client confidential material, or private details about third parties.
+5. If the destination is ambiguous, choose a reasonable default.
+6. After saving, briefly mention what was logged and where.
 
 ## Do Not
 
